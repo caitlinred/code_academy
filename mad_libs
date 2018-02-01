@@ -1,0 +1,61 @@
+"""This program is in the structure of mad-libs. Statements are left with blanks and it is up to the reader to answer the blanks accordingly."""
+
+# Start program with python Madlibs.py
+
+print "Let the Mad Libs begin"
+
+name = raw_input("What's your name?  ")
+
+print "Nice to meet you " + name + "!"
+
+adj1 = raw_input("Give me an adjective   ")
+adj2 = raw_input("Give me another one  ")
+adj3 = raw_input("And one more   ")
+
+print "Cool, thanks " + name + "!"
+
+verb1 = raw_input("Can you give me a verb now?  ")
+verb2 = raw_input("And another one?   ")
+verb3 = raw_input("Great! And one more verb:   ")
+
+
+noun1 = raw_input("I'm going to need some nouns now if you don't mind " + name)
+noun2 = raw_input("Another one?  ")
+noun3 = raw_input("How about another one?   ")
+noun4 = raw_input("And one last verb?  ")
+
+print "Awesome! Thanks " + name + "!"
+
+animal = raw_input("Can you give me an animal?   ")
+fruit = raw_input("A fruit?"  )
+food = raw_input("A food?"  )
+dessert = raw_input("Yum! What about a dessert?  ")
+
+print "Man, now I'm hungry " + name + "!"
+
+number = raw_input("Can you give me a number?   ")
+shname = raw_input("Who's your favorite superhero?   ")
+country = raw_input("How about a country you've always wanted to visit?   ")
+year = raw_input("What year were you born in?  ")
+
+print "Okay cool! Here we go " + name
+
+STORY = "This morning I woke up and felt %s because %s was going to"
+STORY2 = "finally %s over the big %s %s! On the other side of the" 
+STORY3 = "%s were many %ss protesting to keep %s in stores.The crowd began to"
+STORY4 = "%s to the rhythm of the %s, which made all of the %ss very %s." 
+STORY5 = "%s tried to %s into the sewers and found %s rats." 
+STORY6 = "Needing help, %s quickly called %s." 
+STORY7 = "%s appeared and saved %s by flying to %s and dropping %s into a" 
+STORY8 = "puddle of %s. %s then fell asleep and woke up in the" 
+STORY9 = "year %s, in a world where %ss ruled the world."
+
+print STORY % (adj1, name)
+print STORY2 % (verb1, adj2, noun1)
+print STORY3 % (noun2, animal, food)
+print STORY4 % (verb2, noun3, fruit, adj3)
+print STORY5 % (name, verb3, number)
+print STORY6 % (name, shname)
+print STORY7 % (shname, name, country, name)
+print STORY8 % (dessert, name) 
+print STORY9 % (year, noun4)
